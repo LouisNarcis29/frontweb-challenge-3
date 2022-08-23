@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+}
+
+header {
+  height: auto;
+  padding: 30px;
+  padding-bottom: 20px;
+}
+header img {
+  width: 150px;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  padding-bottom: 50px;
+}
+
+.container .left {
+  width: 100%;
+  height: auto;
+  padding: 50px 30px 0px 30px;
+}
+
+.container .right {
+  width: 100%;
+  height: 300px;
+  background-image: url(../img/model.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.container .left h1 {
+  font-size: 3.2rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: hsl(0, 36%, 70%);
+  line-height: 3.5rem;
+  letter-spacing: .5rem;
+}
+
+.container .left h1 span {
+  color: hsl(0, 6%, 24%);
+  font-weight: 600;
+}
+
+.container .left p {
+  max-width: 450px;
+  margin: 20px auto 40px auto;
+  color: hsl(0, 36%, 70%);
+  line-height: 1.5rem;
+}
+
+.container form {
+  position: relative;
+  display: block;
+  height: 50px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.container form input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  outline: none;
+  top: 0;
+  left: 0;
+  border: 1px solid hsl(0, 36%, 70%);
+  padding-left: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.1rem;
+}
+
+.container form button {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 70px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  box-shadow: 0px 0px 18px 1px #f4aaab82;
+}
+
+.container form button:hover {
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 52%, 80%, 0.781));
+  box-shadow: 0px 0px 13px 2px #f4aaabbf;
+}
+
+.container form input::placeholder {
+  color: hsl(0, 36%, 70%);
+  opacity: .8;
+}
+
+footer {
+  background-color: black;
+  padding: 10px 0;
+  color: white;
+  text-align: center;
+  font-size: .8rem;
+  line-height: 1.2rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: aqua;
+}
+
+footer span {
+  color: aqua;
+}
+
+@media only screen and (min-width: 768px){
+  header {
+    position: absolute;
+    padding-left: 10%;
+  }
+
+  header img {
+    width: 180px;
+  }
+
+  .container {
+    flex-direction: row;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .container .right {
+    width: 80%;
+    height: 100vh;
+  }
+
+  .container .left {
+    height: 100vh;
+    padding-top: 28vh;
+    text-align: left;
+    padding-left: 10%;
+  }
+
+  .container .left h1 {
+    font-size: 5rem;
+    line-height: 5.5rem;
+  }
+
+  .container .left p {
+    margin-left: 0;
+    font-size: 1.1rem;
+  }
+
+  .container form {
+    margin-left: 0;
+  }
+
+  .container form button {
+    width: 80px;
+  }
+}
